@@ -14,8 +14,8 @@ if [ -z "$FEDORA_HOME" ]; then
   exit 1
 fi
 
-if [ ! -f "$FEDORA_HOME/client/fcrepo-client-admin-3.4.2.jar" ]; then
-  echo "ERROR: fcrepo-client-admin-3.4.2.jar not found in $FEDORA_HOME/client"
+if [ ! -f "$FEDORA_HOME/client/fcrepo-client-admin-3.5.jar" ]; then
+  echo "ERROR: fcrepo-client-admin-3.5.jar not found in $FEDORA_HOME/client"
   exit 1
 fi
 
@@ -41,7 +41,7 @@ execWithCmdlineArgs() {
 
 execWithTheseArgs() {
     exec_cmd="exec \"$java\" -Xms64m -Xmx96m \
-            -cp \"$FEDORA_HOME\"/client/bin:\"$FEDORA_HOME\"/client/fcrepo-client-admin-3.4.2.jar \
+            -cp \"$FEDORA_HOME\"/client/bin:\"$FEDORA_HOME\"/client/fcrepo-client-admin-3.5.jar \
             -Djava.endorsed.dirs=\"$FEDORA_HOME\"/client/lib \
             -Djavax.net.ssl.trustStore=\"$FEDORA_HOME\"/client/truststore \
             -Djavax.net.ssl.trustStorePassword=tomcat \

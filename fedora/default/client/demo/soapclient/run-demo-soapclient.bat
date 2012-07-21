@@ -8,7 +8,7 @@ echo Starting Demo SOAP Client...
 set OLD_JAVA_HOME=%JAVA_HOME%
 set JAVA_HOME=%THIS_JAVA_HOME%
 
-"%JAVA_HOME%\bin\java" -cp %FEDORA_HOME%;%FEDORA_HOME%\client;%FEDORA_HOME%\client\fcrepo-client-admin-3.4.2.jar -Djava.endorsed.dirs="%FEDORA_HOME%\client\lib" -Dorg.apache.commons.logging.LogFactory=org.apache.commons.logging.impl.Log4jFactory -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.Log4jLoggerr -Djavax.net.ssl.trustStore="%FEDORA_HOME%\client\truststore" -Djavax.net.ssl.trustStorePassword=tomcat -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Dfedora.home=%FEDORA_HOME% demo.soapclient.DemoSOAPClient %1 %2 %3 %4 %5
+"%JAVA_HOME%\bin\java" -cp %FEDORA_HOME%;%FEDORA_HOME%\client;%FEDORA_HOME%\client\fcrepo-client-admin-3.5.jar -Djava.endorsed.dirs="%FEDORA_HOME%\client\lib" -Dorg.apache.commons.logging.LogFactory=org.apache.commons.logging.impl.Log4jFactory -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.Log4jLoggerr -Djavax.net.ssl.trustStore="%FEDORA_HOME%\client\truststore" -Djavax.net.ssl.trustStorePassword=tomcat -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Dfedora.home=%FEDORA_HOME% demo.soapclient.DemoSOAPClient %1 %2 %3 %4 %5
 
 set JAVA_HOME=%OLD_JAVA_HOME%
 
@@ -16,7 +16,7 @@ goto end
 
 :checkEnv
 if "%FEDORA_HOME%" == "" goto noFedoraHome
-if not exist "%FEDORA_HOME%\client\fcrepo-client-admin-3.4.2.jar" goto clientNotFound
+if not exist "%FEDORA_HOME%\client\fcrepo-client-admin-3.5.jar" goto clientNotFound
 if "%FEDORA_JAVA_HOME%" == "" goto tryJavaHome
 set THIS_JAVA_HOME=%FEDORA_JAVA_HOME%
 :checkJava
@@ -35,7 +35,7 @@ goto end
 
 :clientNotFound
 echo ERROR: FEDORA_HOME does not appear correctly set.
-echo Client cannot be found at %FEDORA_HOME%\client\fcrepo-client-admin-3.4.2.jar
+echo Client cannot be found at %FEDORA_HOME%\client\fcrepo-client-admin-3.5.jar
 goto end
 
 :noJavaHome

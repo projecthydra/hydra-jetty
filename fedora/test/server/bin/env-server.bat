@@ -46,7 +46,7 @@ set JAVA="%JAVA_HOME%\bin\java"
 :gotJava
 
 set COMMON="%CATALINA_HOME%\common"
-set CP="%FEDORA_HOME%\server\bin;%FEDORA_HOME%\server\bin\fcrepo-server-3.4.2-cli-loader-main.jar;%WEBINF%\classes"
+set CP="%FEDORA_HOME%\server\bin;%FEDORA_HOME%\server\bin\fcrepo-server-3.5-cli-loader-main.jar;%WEBINF%\classes"
 set OPTS=-Djava.endorsed.dirs="%COMMON%\endorsed;%COMMON%\lib"
 set OPTS=%OPTS% -Djavax.net.ssl.trustStore="%FEDORA_HOME%\server\truststore"
 set OPTS=%OPTS% -Djavax.net.ssl.trustStorePassword=tomcat

@@ -27,13 +27,13 @@
     <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
     <content type="text/xml">
       <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
-        <dc:title>Apache Batik 1.5 Demo Directory</dc:title>
+        <dc:title>Data Object (SVG) for Simple Document Demo</dc:title>
         <dc:creator>Chris Wilper</dc:creator>
         <dc:creator>The Apache Group</dc:creator>
         <dc:subject>svg</dc:subject>
         <dc:subject>batik</dc:subject>
         <dc:subject>apache</dc:subject>
-        <dc:description>Demonstration digital object containing SVG demos from the Batik 1.5 distribution</dc:description>
+        <dc:description>Demonstration digital object containing SVG from the Batik 1.5 distribution</dc:description>
         <dc:publisher>The Apache Group</dc:publisher>
         <dc:format>image/svg+xml</dc:format>
         <dc:identifier>demo:31</dc:identifier>
@@ -56,44 +56,28 @@
     <title type="text">DS1.0</title>
     <updated>2008-07-02T05:09:43.328Z</updated>
     <thr:in-reply-to ref="info:fedora/demo:31/DS1"/>
-    <category scheme="info:fedora/fedora-system:def/model#label" term="Local copy of batikBatik.svg"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Local copy of batikBatik.svg (control group E)"/>
     <summary type="text">DS1.0</summary>
-    <content src="http://www.fedora-commons.org/demo/misc/batikBatik.svg" type="image/svg+xml"/>
-  </entry>
-  <entry>
-    <id>info:fedora/demo:31/DS2</id>
-    <title type="text">DS2</title>
-    <updated>2008-07-02T05:09:43.328Z</updated>
-    <link href="info:fedora/demo:31/DS2/2008-07-02T05:09:43.328Z" rel="alternate"/>
-    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
-    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
-    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
-  </entry>
-  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
-    <id>info:fedora/demo:31/DS2/2008-07-02T05:09:43.328Z</id>
-    <title type="text">DS2.0</title>
-    <updated>2008-07-02T05:09:43.328Z</updated>
-    <thr:in-reply-to ref="info:fedora/demo:31/DS2"/>
-    <category scheme="info:fedora/fedora-system:def/model#label" term="Local copy of sizeOfSun.svg"/>
-    <summary type="text">DS2.0</summary>
-    <content src="http://www.fedora.info/demo/misc/sizeOfSun.svg" type="image/svg+xml"/>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-document-demo/batikBatik.svg" type="image/svg+xml"/>
   </entry>
   <entry>
     <id>info:fedora/demo:31/DS3</id>
     <title type="text">DS3</title>
-    <updated>2008-07-02T05:09:43.328Z</updated>
-    <link href="info:fedora/demo:31/DS3/2008-07-02T05:09:43.328Z" rel="alternate"/>
+    <updated>2011-08-17T20:19:51.155Z</updated>
+    <link href="info:fedora/demo:31/DS3/2011-08-17T20:19:51.155Z" rel="alternate"/>
     <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
     <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="R"/>
     <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
   </entry>
   <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
-    <id>info:fedora/demo:31/DS3/2008-07-02T05:09:43.328Z</id>
+    <id>info:fedora/demo:31/DS3/2011-08-17T20:19:51.155Z</id>
     <title type="text">DS3.0</title>
-    <updated>2008-07-02T05:09:43.328Z</updated>
+    <updated>2011-08-17T20:19:51.155Z</updated>
     <thr:in-reply-to ref="info:fedora/demo:31/DS3"/>
-    <category scheme="info:fedora/fedora-system:def/model#label" term="Homepage for Batik, the software that the demos came with."/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Another local copy of batikBatik.svg (control group R)"/>
     <summary type="text">DS3.0</summary>
-    <content src="http://xml.apache.org/batik/" type="text/html"/>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-document-demo/batikBatik.svg" type="image/svg+xml"/>
   </entry>
 </feed>

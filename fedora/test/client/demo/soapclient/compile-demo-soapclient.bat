@@ -10,7 +10,7 @@ set JAVA_HOME=%THIS_JAVA_HOME%
 echo JAVA_HOME is %JAVA_HOME%
 echo FEDORA_HOME is %FEDORA_HOME%
 
-"%JAVA_HOME%\bin\javac" -classpath %FEDORA_HOME%;%FEDORA_HOME%\client\fcrepo-client-admin-3.4.2.jar -Djava.endorsed.dirs="%FEDORA_HOME%\client\lib" -sourcepath %FEDORA_HOME%\client %FEDORA_HOME%\client\demo\soapclient\DemoSOAPClient.java
+"%JAVA_HOME%\bin\javac" -classpath %FEDORA_HOME%;%FEDORA_HOME%\client\fcrepo-client-admin-3.5.jar -Djava.endorsed.dirs="%FEDORA_HOME%\client\lib" -sourcepath %FEDORA_HOME%\client %FEDORA_HOME%\client\demo\soapclient\DemoSOAPClient.java
 
 
 echo Finished compile of demo soap client.

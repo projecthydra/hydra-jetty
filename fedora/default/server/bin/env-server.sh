@@ -56,7 +56,7 @@ execWithCmdlineArgs() {
 execWithTheseArgs() {
     common="$CATALINA_HOME"/common
     exec_cmd="exec \"$java\" -server -Xmn64m -Xms256m -Xmx256m \
-            -cp \"$webinf\"/classes:\"$FEDORA_HOME\"/server/bin:\"$FEDORA_HOME\"/server/bin/fcrepo-server-3.4.2-cli-loader-main.jar \
+            -cp \"$webinf\"/classes:\"$FEDORA_HOME\"/server/bin:\"$FEDORA_HOME\"/server/bin/fcrepo-server-3.5-cli-loader-main.jar \
             -Djava.endorsed.dirs=\"$common\"/endorsed:\"$common\"/lib \
             -Djavax.net.ssl.trustStore=\"$FEDORA_HOME\"/server/truststore \
             -Djavax.net.ssl.trustStorePassword=tomcat \

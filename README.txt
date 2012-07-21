@@ -24,3 +24,8 @@ You can also change the port jetty starts on by editing the file etc/jetty.xml a
 <Set name="port"><SystemProperty name="jetty.port" default="8983"/></Set>
 
 
+Included Versions
+-----------------
+jetty: 6.1.26
+solr: 3.5.0
+fedora: 3.5
