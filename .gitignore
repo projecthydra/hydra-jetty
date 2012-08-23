@@ -1,4 +1,24 @@
+# Solr instance data
 solr/data/*
 solr/*/data/*
+
+# Fedora dev instance data
+fedora/default/data/datastreamStore/*
+fedora/default/data/objectStore/*
+fedora/default/derby/*
+fedora/default/server/logs/*
+fedora/default/server/management/upload/*
+fedora/default/server/status
+
+# Fedora test instance data
+fedora/test/data/datastreamStore/*
+fedora/test/data/objectStore/*
+fedora/test/derby/*
+fedora/test/server/logs/*
+fedora/test/server/management/upload/*
+fedora/test/server/status
+
+# Logs
 logs/*.log
 derby.log
+jettywrapper.log
