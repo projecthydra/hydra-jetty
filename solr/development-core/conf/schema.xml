@@ -15,7 +15,7 @@
 
     <!-- NOTE:  not all possible Solr field types are represented in the dynamic fields -->
 
-    <!-- text (english) (_t...) -->
+    <!-- text (_t...) -->
     <dynamicField name="*_ti" type="text" stored="false" indexed="true" multiValued="false"/>
     <dynamicField name="*_tim" type="text" stored="false" indexed="true" multiValued="true"/>
     <dynamicField name="*_ts" type="text" stored="true" indexed="false" multiValued="false"/>
@@ -27,6 +27,18 @@
     <dynamicField name="*_tsiv" type="text" stored="true" indexed="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tsimv" type="text" stored="true" indexed="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
     
+    <!-- English text (_te...) -->
+    <dynamicField name="*_tei" type="text_en" stored="false" indexed="true" multiValued="false"/>
+    <dynamicField name="*_teim" type="text_en" stored="false" indexed="true" multiValued="true"/>
+    <dynamicField name="*_tes" type="text_en" stored="true" indexed="false" multiValued="false"/>
+    <dynamicField name="*_tesm" type="text_en" stored="true" indexed="false" multiValued="true"/>
+    <dynamicField name="*_tesi" type="text_en" stored="true" indexed="true" multiValued="false"/>
+    <dynamicField name="*_tesim" type="text_en" stored="true" indexed="true" multiValued="true"/>
+    <dynamicField name="*_teiv" type="text_en" stored="false" indexed="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
+    <dynamicField name="*_teimv" type="text_en" stored="false" indexed="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
+    <dynamicField name="*_tesiv" type="text_en" stored="true" indexed="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
+    <dynamicField name="*_tesimv" type="text_en" stored="true" indexed="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
+    
     <!-- string (_s...) -->
     <dynamicField name="*_si" type="string" stored="false" indexed="true" multiValued="false"/>
     <dynamicField name="*_sim" type="string" stored="false" indexed="true" multiValued="true"/>
@@ -34,7 +46,7 @@
     <dynamicField name="*_ssm" type="string" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_ssi" type="string" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_ssim" type="string" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_ssort" type="string" stored="false" indexed="true" multiValued="false"/>
+    <dynamicField name="*_ssort" type="alphaSort" stored="false" indexed="true" multiValued="false"/>
     
     <!-- integer (_i...) -->
     <dynamicField name="*_ii" type="int" stored="false" indexed="true" multiValued="false"/>
@@ -43,7 +55,6 @@
     <dynamicField name="*_ism" type="int" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_isi" type="int" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_isim" type="int" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_isort" type="int" stored="false" indexed="true" multiValued="false"/>
     
     <!-- trie integer (_it...) (for faster range queries) -->
     <dynamicField name="*_iti" type="tint" stored="false" indexed="true" multiValued="false"/>
@@ -62,7 +73,6 @@
     <dynamicField name="*_dtsm" type="date" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_dtsi" type="date" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_dtsim" type="date" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_dtsort" type="date" stored="false" indexed="true" multiValued="false"/>
     
     <!-- trie date (_dtt...) (for faster range queries) -->
     <dynamicField name="*_dtti" type="tdate" stored="false" indexed="true" multiValued="false"/>
@@ -79,7 +89,6 @@
     <dynamicField name="*_lsm" type="long" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_lsi" type="long" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_lsim" type="long" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_lsort" type="long" stored="false" indexed="true" multiValued="false"/>
     
     <!-- trie long (_lt...) (for faster range queries) -->
     <dynamicField name="*_lti" type="tlong" stored="false" indexed="true" multiValued="false"/>
@@ -96,7 +105,6 @@
     <dynamicField name="*_dbsm" type="double" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_dbsi" type="double" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_dbsim" type="double" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_dbsort" type="double" stored="false" indexed="true" multiValued="false"/>
     
     <!-- trie double (_dbt...) (for faster range queries) -->
     <dynamicField name="*_dbti" type="tdouble" stored="false" indexed="true" multiValued="false"/>
@@ -113,7 +121,6 @@
     <dynamicField name="*_fsm" type="float" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_fsi" type="float" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_fsim" type="float" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_fsort" type="float" stored="false" indexed="true" multiValued="false"/>
     
     <!-- trie float (_ft...) (for faster range queries) -->
     <dynamicField name="*_fti" type="tfloat" stored="false" indexed="true" multiValued="false"/>
@@ -130,7 +137,6 @@
     
     <!-- Type used to index the lat and lon components for the "location" FieldType -->
     <dynamicField name="*_coordinate" type="tdouble" indexed="true"  stored="false" />
-    <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
 
     <!-- location (_ll...) -->
     <dynamicField name="*_lli" type="location" stored="false" indexed="true" multiValued="false"/>
@@ -369,11 +375,12 @@
         <tokenizer class="solr.ICUTokenizerFactory"/>
         <filter class="solr.ICUFoldingFilterFactory"/>  <!-- NFKC, case folding, diacritics removed -->
         <filter class="solr.EnglishPossessiveFilterFactory"/>
-        <!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory: -->
+        <!-- EnglishMinimalStemFilterFactory is less aggressive than PorterStemFilterFactory: -->
         <filter class="solr.EnglishMinimalStemFilterFactory"/>
         <!--
         <filter class="solr.PorterStemFilterFactory"/>
         -->
+        <filter class="solr.TrimFilterFactory"/>
       </analyzer>
     </fieldType>
         
