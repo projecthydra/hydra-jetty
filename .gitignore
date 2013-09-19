@@ -3,22 +3,26 @@ solr/data/*
 solr/*/data/*
 
 # Fedora dev instance data
-fedora/default/data/datastreamStore/*
-fedora/default/data/objectStore/*
+fedora/default/data
 fedora/default/derby/*
 fedora/default/server/logs/*
 fedora/default/server/management/upload/*
 fedora/default/server/status
 
 # Fedora test instance data
-fedora/test/data/datastreamStore/*
-fedora/test/data/objectStore/*
+fedora/test/data
 fedora/test/derby/*
 fedora/test/server/logs/*
 fedora/test/server/management/upload/*
 fedora/test/server/status
 
+fedora/default/server/fedora-internal-use/fedora-internal-use-backend-service-policies/
+fedora/default/server/fedora-internal-use/has-started.txt
+
+fedora/test/server/fedora-internal-use/fedora-internal-use-backend-service-policies/
+fedora/test/server/fedora-internal-use/has-started.txt
+
 # Logs
-logs/*.log
+logs/*
 derby.log
 jettywrapper.log

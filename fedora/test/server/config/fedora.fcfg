@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+WARNING! ACHTUNG! ATTENZIONE!
+
+This configuration file is considered a legacy service and will eventually be deprecated.
+The recommended means of configuration is now Fedora's Spring configuration facility, as
+documented here:
+
+https://wiki.duraspace.org/display/FEDORA36/Spring+Configuration
+
+and here:
+
+https://wiki.duraspace.org/display/FEDORA36/Spring+Security
+
+-->
+
+
 <server xmlns="http://www.fedora.info/definitions/1/0/config/" class="org.fcrepo.server.BasicServer">
   <param name="datastreamExtensionMappingSource" value="mime-to-extensions.xml">
     <comment>Source of mappings from MIMETYPE to file extension</comment>
+  </param>
+  <param name="fedoraServerPort" value="8080">
+    <comment>Defines the port number on which the Fedora server runs; 
+		default is 8080.</comment>
+  </param>
+  <param name="httpClientFollowRedirects" value="true">
+    <comment>Should the Fedora http client follow redirects?</comment>
+  </param>
+  <param name="fedoraRedirectPort" value="8443">
+    <comment>Defines the redirect port of the Fedora sever; default is 8443.</comment>
+  </param>
+  <param name="datastreamExtensionMappingDefault" value="never">
+    <comment>Controls filename extension mapping when no filename can be determined from
+		the sources listed in datastreamFilenameSource.  Values are always: always generate an extension
+		based on the MIMETYPE (using the default if no appropriate mapping is specified);
+		never: never generate an extension.</comment>
   </param>
   <param name="datastreamExtensionMappingId" value="ifmissing">
     <comment>Controls filename extension mapping when the datastream ID is used
@@ -9,69 +43,6 @@
   </param>
   <param name="httpClientMaxConnectionsPerHost" value="5">
     <comment>Maximum number of Fedora http client connections allowed to a given host.</comment>
-  </param>
-  <param name="httpClientSocketTimeoutSecs" value="120">
-    <comment>Number of seconds Fedora http client will wait for data coming across an 
-		established http connection.</comment>
-  </param>
-  <param name="fedoraServerHost" value="localhost">
-    <comment>Defines the host name for the Fedora server, as seen from the 
-		outside world.</comment>
-  </param>
-  <param name="datastreamExtensionMappingLabel" value="always">
-    <comment>Controls filename extension mapping when the datastream label is used
-		as the source of the filename.  Values are always: always generate an extension
-		based on the MIMETYPE, using the default extension if none can be determined; 
-		ifmissing: generate an extension if the filename obtained from the source does not
-		already contain one (again returning the default if there is no MIMETYPE-to-extension
-		mapping is found); never: never generate an extension, use the filename from the source
-		as-is</comment>
-  </param>
-  <param name="httpClientMaxFollowRedirects" value="3">
-    <comment>Maximun number of redirects the Fedora http client will follow (only if 
-		httpClientFollowRedirects is set to true.)</comment>
-  </param>
-  <param name="httpClientUserAgent" value="Fedora">
-    <comment>The value to be set for the User-Agent HTTP request header.</comment>
-  </param>
-  <param name="httpClientMaxTotalConnections" value="5">
-    <comment>Maximum number of total Fedora http client connections allowed at once.</comment>
-  </param>
-  <param name="datastreamFilenameSource" value="rels label id">
-    <comment>determines the source of the filename generated when download=true
-		on a datastream dissemination.  Value is space separated list of label: use the datastream label;
-		id: use the datastream ID; rels: use the value defined in RELS-INT.  Each
-		source is checked in order, and the first containing a value is used.  Omit
-		any of the sources if that source is never to be used.  If no sources are to be used,
-		and just the default filename and extension below are to be used, specify &quot; &quot;.</comment>
-  </param>
-  <param name="adminEmailList" value="bob@example.org sally@example.org">
-    <comment>Defines one or more email addresses for server administrators; 
-		list is space delimited.</comment>
-  </param>
-  <param name="datastreamMediationLimit" value="5000">
-    <comment>Determines the time interval in which external mechanisms must 
-		respond to requests by the Fedora server. The value is specified in 
-		milliseconds. The value specified should be set high enough to allow 
-		for an average response time from any single external mechanisms. Note 
-		this value must be less than the limit specified for the 
-		datastreamExpirationLimit.</comment>
-  </param>
-  <param name="fedoraServerPort" value="8983">
-    <comment>Defines the port number on which the Fedora server runs; 
-		default is 8080.</comment>
-  </param>
-  <param name="fedoraRedirectPort" value="8443">
-    <comment>Defines the redirect port of the Fedora sever; default is 8443.</comment>
-  </param>
-  <param name="httpClientFollowRedirects" value="true">
-    <comment>Should the Fedora http client follow redirects?</comment>
-  </param>
-  <param name="datastreamExtensionMappingDefault" value="never">
-    <comment>Controls filename extension mapping when no filename can be determined from
-		the sources listed in datastreamFilenameSource.  Values are always: always generate an extension
-		based on the MIMETYPE (using the default if no appropriate mapping is specified);
-		never: never generate an extension.</comment>
   </param>
   <param name="datastreamContentDispositionInlineEnabled" value="true">
     <comment>determines if a content-disposition header specifying &quot;inline&quot; and
@@ -91,12 +62,33 @@
     <comment>Defines the port number used to shutdown the Fedora sever; 
 		default is 8005.</comment>
   </param>
+  <param name="httpClientSocketTimeoutSecs" value="120">
+    <comment>Number of seconds Fedora http client will wait for data coming across an 
+		established http connection.</comment>
+  </param>
   <param name="datastreamDefaultExtension" value="bin">
     <comment>Extension to use when none can be determined from mappings</comment>
+  </param>
+  <param name="fedoraServerHost" value="localhost">
+    <comment>Defines the host name for the Fedora server, as seen from the 
+		outside world.</comment>
   </param>
   <param name="datastreamDefaultFilename" value="download">
     <comment>Filename to use for datastream downloads when none can be determined from the
 		sources listed in datastreamFilenameSource.</comment>
+  </param>
+  <param name="datastreamExtensionMappingLabel" value="always">
+    <comment>Controls filename extension mapping when the datastream label is used
+		as the source of the filename.  Values are always: always generate an extension
+		based on the MIMETYPE, using the default extension if none can be determined; 
+		ifmissing: generate an extension if the filename obtained from the source does not
+		already contain one (again returning the default if there is no MIMETYPE-to-extension
+		mapping is found); never: never generate an extension, use the filename from the source
+		as-is</comment>
+  </param>
+  <param name="httpClientMaxFollowRedirects" value="3">
+    <comment>Maximun number of redirects the Fedora http client will follow (only if 
+		httpClientFollowRedirects is set to true.)</comment>
   </param>
   <param name="datastreamExpirationLimit" value="300">
     <comment>Controls the size of the datastream mediation hash by removing 
@@ -104,17 +96,43 @@
 		seconds. Note this value must be greater than the limit specified for 
 		the datastreamMediationLimit.</comment>
   </param>
-  <param name="datastreamExtensionMappingRels" value="never">
-    <comment>Controls filename extension mapping when RELS-INT is used
-		as the source of the filename.  Values are as above.</comment>
+  <param name="httpClientUserAgent" value="Fedora">
+    <comment>The value to be set for the User-Agent HTTP request header.</comment>
+  </param>
+  <param name="httpClientMaxTotalConnections" value="5">
+    <comment>Maximum number of total Fedora http client connections allowed at once.</comment>
   </param>
   <param name="httpClientTimeoutSecs" value="20">
     <comment>Number of seconds Fedora http client will wait for a connection before timing 
 		out.</comment>
   </param>
+  <param name="datastreamExtensionMappingRels" value="never">
+    <comment>Controls filename extension mapping when RELS-INT is used
+		as the source of the filename.  Values are as above.</comment>
+  </param>
+  <param name="datastreamFilenameSource" value="rels label id">
+    <comment>determines the source of the filename generated when download=true
+		on a datastream dissemination.  Value is space separated list of label: use the datastream label;
+		id: use the datastream ID; rels: use the value defined in RELS-INT.  Each
+		source is checked in order, and the first containing a value is used.  Omit
+		any of the sources if that source is never to be used.  If no sources are to be used,
+		and just the default filename and extension below are to be used, specify &quot; &quot;.</comment>
+  </param>
   <param name="repositoryName" value="Fedora Repository">
     <comment>Defines a human readable name for the Fedora server; default is 
 		Fedora Repository.</comment>
+  </param>
+  <param name="adminEmailList" value="bob@example.org sally@example.org">
+    <comment>Defines one or more email addresses for server administrators; 
+		list is space delimited.</comment>
+  </param>
+  <param name="datastreamMediationLimit" value="5000">
+    <comment>Determines the time interval in which external mechanisms must 
+		respond to requests by the Fedora server. The value is specified in 
+		milliseconds. The value specified should be set high enough to allow 
+		for an average response time from any single external mechanisms. Note 
+		this value must be less than the limit specified for the 
+		datastreamExpirationLimit.</comment>
   </param>
   <module role="org.fcrepo.server.security.Authorization" class="org.fcrepo.server.security.DefaultAuthorization">
     <comment>Builds and manages Fedora's authorization structure.</comment>
@@ -835,16 +853,16 @@
 			foreground and the buffer will be locked for writing until it is 
 			finished. This should be larger than autoFlushBufferSize.</comment>
     </param>
+    <param name="bufferFlushBatchSize" value="20000">
+      <comment>The number of updates to send to the triplestore at a time. 
+			This should be the same size as, or smaller than 
+			autoFlushBufferSize.</comment>
+    </param>
     <param name="autoCreate" value="true">
       <comment>Create the model if it doesn&apos;t already exist. 
 			At startup, the model will be automatically created. In addition, an 
 			XML schema datatyped model named &quot;xsd&quot; will also be automatically 
 			created.</comment>
-    </param>
-    <param name="bufferFlushBatchSize" value="20000">
-      <comment>The number of updates to send to the triplestore at a time. 
-			This should be the same size as, or smaller than 
-			autoFlushBufferSize.</comment>
     </param>
     <param name="autoTextIndex" value="false">
       <comment>Whether to propagate adds/deletes to a full-text 
@@ -911,19 +929,19 @@
 		     http://jdbc.postgresql.org/download.html
 		     and make sure it's accessible to your servlet container.
 		     If you're running Tomcat, putting it in common/lib/ will work.</comment>
-    <param name="fetchSize" value="1000"/>
-    <param name="poolInitialSize" value="3"/>
-    <param name="bufferSafeCapacity" value="2000"/>
-    <param name="bufferFlushBatchSize" value="1000"/>
-    <param name="backslashIsEscape" value="true"/>
-    <param name="autoFlushDormantSeconds" value="5"/>
-    <param name="password" value="fedoraAdmin"/>
     <param name="autoFlushBufferSize" value="1000"/>
+    <param name="fetchSize" value="1000"/>
     <param name="username" value="fedoraAdmin"/>
     <param name="poolMaxSize" value="10"/>
+    <param name="poolInitialSize" value="3"/>
     <param name="jdbcURL" value="jdbc:postgresql://localhost/riTriples"/>
+    <param name="bufferSafeCapacity" value="2000"/>
+    <param name="bufferFlushBatchSize" value="1000"/>
     <param name="ddlGenerator" value="org.nsdl.mptstore.impl.postgres.PostgresDDLGenerator"/>
+    <param name="autoFlushDormantSeconds" value="5"/>
+    <param name="backslashIsEscape" value="true"/>
     <param name="connectorClassName" value="org.trippi.impl.mpt.MPTConnector"/>
+    <param name="password" value="fedoraAdmin"/>
     <param name="jdbcDriver" value="org.postgresql.Driver"/>
   </datastore>
   <datastore id="apimUpdateMessages">
