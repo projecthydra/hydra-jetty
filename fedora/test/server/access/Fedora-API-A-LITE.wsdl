@@ -293,7 +293,7 @@
 				</p>
 				<p> A complete example URL conforming to this syntax is:</p>
 				<p>
-					<i>http://localhost:8080/fedora/describe?xml=true</i>
+					<i>http://localhost:8983/fedora/describe?xml=true</i>
 				</p>
 			</documentation>
 			<input message="fedora-api:describeRepositoryRequest"/>
@@ -367,7 +367,7 @@
 				</p>
 				<p> A couple complete example URLs conforming to this syntax, are:</p>
 				<p>
-					<i>http://localhost:8080/fedora/search?terms=fedora&amp;pid=true</i>
+					<i>http://localhost:8983/fedora/search?terms=fedora&amp;pid=true</i>
 				</p>
 				<dir>
 This example requests that the server provide the pids of objects where any of the indexed fields contain the word fedora.
@@ -375,7 +375,7 @@ Since maxResults and xml aren't specified, the maxResults the server uses will b
 be provided in html.
 </dir>
 				<p>
-					<i>http://localhost:8080/fedora/search?query=pid~*1&amp;maxResults=50&amp;xml=true&amp;pid=true&amp;creator=true</i>
+					<i>http://localhost:8983/fedora/search?query=pid~*1&amp;maxResults=50&amp;xml=true&amp;pid=true&amp;creator=true</i>
 				</p>
 				<dir>
 This example requests that the server provide the pids and dc:creators of objects where the pid ends with the number 1.
@@ -634,7 +634,7 @@ It asks for up to 50 results at a time from the server, and requests that the re
 	</binding>
 	<service name="Fedora-API-A-LITE">
 		<port name="Fedora-API-A-LITE-Port" binding="fedora-api:Fedora-API-A-LITE-Binding">
-			<http:address location="http://localhost:8080/fedora/"/>
+			<http:address location="http://localhost:8983/fedora/"/>
 		</port>
 		<port name="Fedora-API-A-LITE-Port-SSL" binding="fedora-api:Fedora-API-A-LITE-Binding">
 			<http:address location="https://localhost:8443/fedora/"/>

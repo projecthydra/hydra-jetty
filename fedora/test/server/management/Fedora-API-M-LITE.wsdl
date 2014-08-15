@@ -69,7 +69,7 @@
 				</p>
 				<p> A complete example URL conforming to this syntax is:</p>
 				<p>
-					<i>http://localhost:8080/fedora/management/getNextPID?numPids=5&amp;pidNamespace=my-pidNamespace&amp;xml=true</i>
+					<i>http://localhost:8983/fedora/management/getNextPID?numPids=5&amp;pidNamespace=my-pidNamespace&amp;xml=true</i>
 				</p>
 			</documentation>
 			<input message="fedora-api:getNextPIDRequest"/>
@@ -138,7 +138,7 @@
 
 	<service name="Fedora-API-M-LITE">
 		<port name="Fedora-API-M-LITE-Port" binding="fedora-api:Fedora-API-M-LITE-Binding">
-			<http:address location="http://localhost:8080/fedora/management/"/>
+			<http:address location="http://localhost:8983/fedora/management/"/>
 		</port>
 		<port name="Fedora-API-M-LITE-Port-SSL" binding="fedora-api:Fedora-API-M-LITE-Binding">
 			<http:address location="https://localhost:8443/fedora/management/"/>
