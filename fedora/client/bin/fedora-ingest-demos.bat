@@ -13,7 +13,7 @@ echo ERROR: Not enough arguments.
 echo Usage:
 echo   fedora-ingest-demos host port user password protocol [context]
 echo Example:
-echo   fedora-ingest-demos localhost 8080 fedoraAdmin fedoraAdmin http my-fedora
+echo   fedora-ingest-demos localhost 8983 fedoraAdmin fedoraAdmin http my-fedora
 exit /B 1
 :enoughArgs
 

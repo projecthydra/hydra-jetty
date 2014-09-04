@@ -21,7 +21,7 @@ https://wiki.duraspace.org/display/FEDORA36/Spring+Security
   <param name="datastreamExtensionMappingSource" value="mime-to-extensions.xml">
     <comment>Source of mappings from MIMETYPE to file extension</comment>
   </param>
-  <param name="fedoraServerPort" value="8080">
+  <param name="fedoraServerPort" value="8983">
     <comment>Defines the port number on which the Fedora server runs; 
 		default is 8080.</comment>
   </param>
@@ -142,7 +142,7 @@ https://wiki.duraspace.org/display/FEDORA36/Spring+Security
     <param name="POLICY-SCHEMA-PATH" value="xsd/cs-xacml-schema-policy-01.xsd"/>
     <param name="ENFORCE-MODE" value="permit-all-requests"/>
     <param name="VALIDATE-OBJECT-POLICIES-FROM-DATASTREAM" value="false"/>
-    <param name="XACML-COMBINING-ALGORITHM" value="com.sun.xacml.combine.OrderedDenyOverridesPolicyAlg"/>
+    <param name="XACML-COMBINING-ALGORITHM" value="org.jboss.security.xacml.sunxacml.combine.OrderedDenyOverridesPolicyAlg"/>
     <param name="VALIDATE-OBJECT-POLICIES-FROM-FILE" value="false"/>
     <param name="VALIDATE-REPOSITORY-POLICIES" value="true"/>
     <param name="REPOSITORY-POLICIES-DIRECTORY" value="data/fedora-xacml-policies/repository-policies" isFilePath="true"/>
@@ -205,7 +205,7 @@ https://wiki.duraspace.org/display/FEDORA36/Spring+Security
             your own FedoraStorageHintProvider and drop your implementation to the $CATALINA_HOME/webapps/fedora/WEB_INF/classes
             directory (unpackaged), or the $CATALINA_HOME/webapps/fedora/WEB_INF/lib director (packaged).</comment>
     </param>
-    <param name="gSearchRESTURL" value="http://localhost:8080/fedoragsearch/rest">
+    <param name="gSearchRESTURL" value="http://localhost:8983/fedoragsearch/rest">
       <comment>The REST endpoint of the Fedora Generic Search service.
             This parameter is only required if GSearchDOManager is 
             used.</comment>
@@ -220,37 +220,6 @@ https://wiki.duraspace.org/display/FEDORA36/Spring+Security
       <comment>This is the namespace id for pids of newly-created objects. 
 	    	This should be unique for a repository. It can be from 1 to 17 
 	    	characters, and may only contain A-Z, a-z, 0-9, &apos;.&apos;, or &apos;-&apos; (dash).</comment>
-    </param>
-  </module>
-  <module role="org.fcrepo.server.management.Management" class="org.fcrepo.server.management.ManagementModule">
-    <comment>The management subsystem. This implements the methods necessary 
-		to fulfill API-M requests without regard to:
-                 - how the service is exposed
-                 - how bytestreams and java types might be marshalled/demarshalled over the wire
-                 - how the storage subsystem is implemented.</comment>
-    <param name="purgeDelayInMillis" value="60000">
-      <comment>Optional, default is 60000 (1 minute).
-            This specifies the amount of time between checks to remove
-            temporary files uploaded via the API-M upload interface.  During
-            each check, old files whose age exceeds uploadStorageMinutes
-            will be removed.</comment>
-    </param>
-    <param name="decorator1" value="org.fcrepo.server.messaging.NotificationInvocationHandler"/>
-    <param name="checksumAlgorithm" value="MD5">
-      <comment>Specifies which checksumming algorithm is to be used when 
-			automatically computing checksums as specified by the above 
-			parameter. Valid values are: MD5  SHA-1  SHA-256  SHA-384  SHA-512.</comment>
-    </param>
-    <param name="uploadStorageMinutes" value="5">
-      <comment>Optional, default is 5.
-            This specifies the minimum amount of time that each uploaded
-            file should be kept in temporary storage.</comment>
-    </param>
-    <param name="autoChecksum" value="false">
-      <comment>Controls whether a checksum is automatically computed for 
-			every datastream as the datastream is added to the repository. This 
-			will allow the integrity of datastream contents to be periodically 
-			checked to insure the object is not corrupted.</comment>
     </param>
   </module>
   <module role="org.fcrepo.server.access.Access" class="org.fcrepo.server.access.DefaultAccess">
@@ -520,6 +489,36 @@ https://wiki.duraspace.org/display/FEDORA36/Spring+Security
   </module>
   <module role="org.fcrepo.server.storage.ExternalContentManager" class="org.fcrepo.server.storage.DefaultExternalContentManager">
     <comment>This module facilitates obtaining external content via HTTP</comment>
+  </module>
+  <module role="org.fcrepo.server.management.Management" class="org.fcrepo.server.management.ManagementModule">
+    <comment>The management subsystem. This implements the methods necessary 
+		to fulfill API-M requests without regard to:
+                 - how the service is exposed
+                 - how bytestreams and java types might be marshalled/demarshalled over the wire
+                 - how the storage subsystem is implemented.</comment>
+    <param name="purgeDelayInMillis" value="60000">
+      <comment>Optional, default is 60000 (1 minute).
+            This specifies the amount of time between checks to remove
+            temporary files uploaded via the API-M upload interface.  During
+            each check, old files whose age exceeds uploadStorageMinutes
+            will be removed.</comment>
+    </param>
+    <param name="checksumAlgorithm" value="MD5">
+      <comment>Specifies which checksumming algorithm is to be used when 
+			automatically computing checksums as specified by the above 
+			parameter. Valid values are: MD5  SHA-1  SHA-256  SHA-384  SHA-512.</comment>
+    </param>
+    <param name="autoChecksum" value="false">
+      <comment>Controls whether a checksum is automatically computed for 
+			every datastream as the datastream is added to the repository. This 
+			will allow the integrity of datastream contents to be periodically 
+			checked to insure the object is not corrupted.</comment>
+    </param>
+    <param name="uploadStorageMinutes" value="5">
+      <comment>Optional, default is 5.
+            This specifies the minimum amount of time that each uploaded
+            file should be kept in temporary storage.</comment>
+    </param>
   </module>
   <datastore id="localMySQLPool">
     <comment>MySQL database on localhost with db name of fedora3. Each

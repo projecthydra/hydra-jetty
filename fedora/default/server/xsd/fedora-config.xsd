@@ -13,7 +13,7 @@
 
   <server namespace="cornell-dlrg-test1" 
       label="Test Fedora Repository"
-      port="8080"/>
+      port="8983"/>
     <comment>This is just a test server.</comment>
     <admin email="root@localhost" public="true">
       <comment>This is Bob Smith.  He's real nice.</comment>

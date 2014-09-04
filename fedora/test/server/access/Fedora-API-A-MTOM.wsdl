@@ -205,7 +205,7 @@
 
   <service name="Fedora-API-A-MTOM-Service">
     <port name="Fedora-API-A-MTOM-Port-SOAPHTTP" binding="fedora-api:Fedora-API-A-MTOM-Binding-SOAPHTTP">
-      <soap:address location="http://localhost:8080/fedora/services/accessMTOM"/>
+      <soap:address location="http://localhost:8983/fedora/services/accessMTOM"/>
     </port>
     <port name="Fedora-API-A-MTOM-Port-SOAPHTTPS" binding="fedora-api:Fedora-API-A-MTOM-Binding-SOAPHTTP">
       <soap:address location="https://localhost:8443/fedora/services/accessMTOM"/>
