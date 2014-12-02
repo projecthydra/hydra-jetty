@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="contextPath">/fedora3</Set>
+  <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/fedora3.war</Set>
+  <Call name="setInitParameter">
+    <Arg>fedora.home</Arg>
+    <Arg><SystemProperty name="jetty.home" default="."/>/fedora/default</Arg>
+  </Call>
+</Configure>

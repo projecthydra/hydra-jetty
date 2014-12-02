@@ -1,0 +1,121 @@
+urn:fedora:names:fedora:2.1:subject:loginId	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:subject:role	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:subject:subjectRepresented	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:action:api	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:action:api-m	
+urn:fedora:names:fedora:2.1:action:api-a	
+urn:fedora:names:fedora:2.1:action:id	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:action:id-addDatastream	
+urn:fedora:names:fedora:2.1:action:id-export	
+urn:fedora:names:fedora:2.1:action:id-getDatastream	
+urn:fedora:names:fedora:2.1:action:id-getDatastreamHistory	
+urn:fedora:names:fedora:2.1:action:id-getDatastreams	
+urn:fedora:names:fedora:2.1:action:id-getNextPid	
+urn:fedora:names:fedora:2.1:action:id-getObjectXML	
+urn:fedora:names:fedora:2.1:action:id-ingest	
+urn:fedora:names:fedora:2.1:action:id-modifyDatastreamByReference	
+urn:fedora:names:fedora:2.1:action:id-modifyDatastreamByValue	
+urn:fedora:names:fedora:2.1:action:id-modifyObject	
+urn:fedora:names:fedora:2.1:action:id-purgeObject	
+urn:fedora:names:fedora:2.1:action:id-purgeDatastream	
+urn:fedora:names:fedora:2.1:action:id-setDatastreamState	
+urn:fedora:names:fedora:2.1:action:id-setDatastreamVersionable	
+urn:fedora:names:fedora:2.1:action:id-compareDatastreamChecksum	
+urn:fedora:names:fedora:2.1:action:id-describeRepository	
+urn:fedora:names:fedora:2.1:action:id-findObjects	
+urn:fedora:names:fedora:2.1:action:id-riFindObjects	
+urn:fedora:names:fedora:2.1:action:id-getDatastreamDissemination	
+urn:fedora:names:fedora:2.1:action:id-getDissemination	
+urn:fedora:names:fedora:2.1:action:id-getObjectHistory	
+urn:fedora:names:fedora:2.1:action:id-getObjectProfile	
+urn:fedora:names:fedora:2.1:action:id-listDatastreams	
+urn:fedora:names:fedora:2.1:action:id-listMethods	
+urn:fedora:names:fedora:2.1:action:id-listObjectInFieldSearchResults	
+urn:fedora:names:fedora:2.1:action:id-listObjectInResourceIndexResults	
+urn:fedora:names:fedora:2.1:action:id-serverStatus	
+urn:fedora:names:fedora:2.1:action:id-oai	
+urn:fedora:names:fedora:2.1:action:id-upload	
+urn:fedora:names:fedora:2.1:action:id-dsstate	
+urn:fedora:names:fedora:2.1:action:id-resolveDatastream	
+urn:fedora:names:fedora:2.1:action:id-reloadPolicies	
+urn:fedora:names:fedora:2.1:action:id-managePolicies	
+urn:fedora:names:fedora:2.1:action:id-getRelationships	
+urn:fedora:names:fedora:2.1:action:id-addRelationship	
+urn:fedora:names:fedora:2.1:action:id-purgeRelationship	
+urn:fedora:names:fedora:2.1:action:id-retrieveFile	
+urn:fedora:names:fedora:2.1:action:id-validate	
+urn:fedora:names:fedora:2.1:resource:ticketIssuedDateTime	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:object:pid	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:namespace	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:state	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:newState	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:controlGroup	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:owner	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:createdDate	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:object:lastModifiedDate	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:object:objectType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:context	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:encoding	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:object:formatUri	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:object:nPids	http://www.w3.org/2001/XMLSchema#integer
+urn:fedora:names:fedora:2.1:resource:datastream:asOfDateTime	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:datastream:contentLength	http://www.w3.org/2001/XMLSchema#integer
+urn:fedora:names:fedora:2.1:resource:datastream:controlGroup	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newControlGroup	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:createdDate	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:datastream:formatUri	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:datastream:newFormatUri	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:datastream:id	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:infoType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:location	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:datastream:newLocation	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:datastream:fileUri	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:datastream:locationType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:mimeType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newMimeType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:state	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newState	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newVersionable	http://www.w3.org/2001/XMLSchema#boolean
+urn:fedora:names:fedora:2.1:resource:datastream:checksum	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newChecksum	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:checksumType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newChecksumType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:altIds	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:datastream:newAltIds	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:disseminator:id	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:disseminator:state	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:disseminator:method	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:disseminator:asOfDateTime	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:resource:disseminator:newState	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdef:pid	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdef:namespace	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdef:location	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:sdef:state	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdep:pid	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdep:newPid	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdep:namespace	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdep:newNamespace	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:resource:sdep:location	http://www.w3.org/2001/XMLSchema#anyURI
+urn:fedora:names:fedora:2.1:resource:sdep:state	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:currentDate	http://www.w3.org/2001/XMLSchema#date
+urn:fedora:names:fedora:2.1:environment:currentDateTime	http://www.w3.org/2001/XMLSchema#dateTime
+urn:fedora:names:fedora:2.1:environment:currentTime	http://www.w3.org/2001/XMLSchema#time
+urn:fedora:names:fedora:2.1:environment:httpRequest:authType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:clientFqdn	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:clientIpAddress	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:contentLength	http://www.w3.org/2001/XMLSchema#integer
+urn:fedora:names:fedora:2.1:environment:httpRequest:contentType	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:messageProtocol	
+urn:fedora:names:fedora:2.1:environment:httpRequest:messageProtocol-soap	
+urn:fedora:names:fedora:2.1:environment:httpRequest:messageProtocol-rest	
+urn:fedora:names:fedora:2.1:environment:httpRequest:method	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:protocol	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:scheme	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:security	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:security-secure	
+urn:fedora:names:fedora:2.1:environment:httpRequest:security-insecure	
+urn:fedora:names:fedora:2.1:environment:httpRequest:serverFqdn	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:serverIpAddress	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:serverPort	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:sessionEncoding	http://www.w3.org/2001/XMLSchema#string
+urn:fedora:names:fedora:2.1:environment:httpRequest:sessionStatus	http://www.w3.org/2001/XMLSchema#string

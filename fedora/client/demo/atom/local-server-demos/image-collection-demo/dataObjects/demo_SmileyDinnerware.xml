@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:SmileyDinnerware</id>
+  <title type="text">Data Object (Smiley Dinnerware) for Image Collection Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:SmileyDinnerware/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <link href="info:fedora/demo:SmileyDinnerware/DC/2008-07-02T05:09:42.968Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyDinnerware/DC/2008-07-02T05:09:42.968Z</id>
+    <title type="text">DC.1</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyDinnerware/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Smiley Dinnerware</dc:title>
+        <dc:description>Made from 100% pure paper and plastic, this dinnerware is sure to impress your kids.</dc:description>
+        <dc:identifier>demo:SmileyDinnerware</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyDinnerware/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <link
+      href="info:fedora/demo:SmileyDinnerware/RELS-EXT/2008-07-02T05:09:42.968Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyDinnerware/RELS-EXT/2008-07-02T05:09:42.968Z</id>
+    <title type="text">RELS-EXT.0</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyDinnerware/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rel="info:fedora/fedora-system:def/relations-external#">
+        <rdf:Description rdf:about="info:fedora/demo:SmileyDinnerware">
+          <rel:isMemberOf rdf:resource="info:fedora/demo:SmileyStuff"/>
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:DualResImage"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyDinnerware/MEDIUM_SIZE</id>
+    <title type="text">MEDIUM_SIZE</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <link
+      href="info:fedora/demo:SmileyDinnerware/MEDIUM_SIZE/2008-07-02T05:09:42.968Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyDinnerware/MEDIUM_SIZE/2008-07-02T05:09:42.968Z</id>
+    <title type="text">MediumSize.jpg.0</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyDinnerware/MEDIUM_SIZE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Medium-size image"/>
+    <summary type="text">MediumSize.jpg.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyDinnerware-MediumSize.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyDinnerware/FULL_SIZE</id>
+    <title type="text">FULL_SIZE</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <link
+      href="info:fedora/demo:SmileyDinnerware/FULL_SIZE/2008-07-02T05:09:42.968Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyDinnerware/FULL_SIZE/2008-07-02T05:09:42.968Z</id>
+    <title type="text">FullSize.jpg.0</title>
+    <updated>2008-07-02T05:09:42.968Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyDinnerware/FULL_SIZE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Full-size image"/>
+    <summary type="text">FullSize.jpg.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyDinnerware-FullSize.jpg" type="image/jpeg"/>
+  </entry>
+</feed>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1"
+  LABEL="Data Object (Smiley Toilet Brush) for Image Collection Demo"
+  OBJID="demo:SmileyToiletBrush" xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.093Z" ID="DC.1">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Smiley Toilet Brush</dc:title>
+            <dc:description>At least one of you will be smiling while you put this item to use.</dc:description>
+            <dc:identifier>demo:SmileyToiletBrush</dc:identifier>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="RELS-EXT" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.093Z" ID="RELS-EXT.0">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+        LABEL="RDF Statements about this object" MDTYPE="OTHER"
+        MIMETYPE="application/rdf+xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rel="info:fedora/fedora-system:def/relations-external#">
+            <rdf:Description rdf:about="info:fedora/demo:SmileyToiletBrush">
+              <rel:isMemberOf rdf:resource="info:fedora/demo:SmileyStuff"/>
+              <fedora-model:hasModel rdf:resource="info:fedora/demo:DualResImage"/>
+            </rdf:Description>
+          </rdf:RDF>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:fileSec>
+    <METS:fileGrp ID="DATASTREAMS">
+      <METS:fileGrp ID="MEDIUM_SIZE" STATUS="A" VERSIONABLE="true">
+        <METS:file CREATED="2008-07-02T05:09:43.093Z" ID="MediumSize.jpg.0"
+          MIMETYPE="image/jpeg" OWNERID="E">
+          <METS:FLocat LOCTYPE="URL"
+            xlink:href="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyToiletBrush-MediumSize.jpg" xlink:title="Medium-size image"/>
+        </METS:file>
+      </METS:fileGrp>
+      <METS:fileGrp ID="FULL_SIZE" STATUS="A" VERSIONABLE="true">
+        <METS:file CREATED="2008-07-02T05:09:43.093Z" ID="FullSize.jpg.0"
+          MIMETYPE="image/jpeg" OWNERID="E">
+          <METS:FLocat LOCTYPE="URL"
+            xlink:href="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyToiletBrush-FullSize.jpg" xlink:title="Full-size image"/>
+        </METS:file>
+      </METS:fileGrp>
+    </METS:fileGrp>
+  </METS:fileSec>
+</METS:mets>

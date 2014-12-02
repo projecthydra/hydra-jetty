@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1"
+  LABEL="Service Deployment Object (Image) for Image Collection Demo"
+  OBJID="demo:DualResImageImpl" xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.203Z" ID="DC1.0">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Service Deployment Object (Image) for Image Collection Demo</dc:title>
+            <dc:identifier>demo:DualResImageImpl</dc:identifier>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="RELS-EXT" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.203Z" ID="RELS-EXT.1">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+        LABEL="RDF Statements about this object" MDTYPE="OTHER"
+        MIMETYPE="application/rdf+xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="info:fedora/demo:DualResImageImpl">
+              <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"/>
+              <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:DualResolution"/>
+              <fedora-model:isContractorOf rdf:resource="info:fedora/demo:DualResImage"/>
+            </rdf:Description>
+          </rdf:RDF>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="METHODMAP" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.203Z" ID="METHODMAP1.0">
+      <METS:mdWrap
+        FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.1"
+        LABEL="Deployment Method Map" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fmm:MethodMap name="MethodMap - Dual Resolution Image Implementation" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+            <fmm:Method operationLabel="A full-size image"
+              operationName="fullSize" wsdlMsgName="fullSizeRequest" wsdlMsgOutput="dissemResponse">
+              <fmm:DatastreamInputParm defaultValue=""
+                label="The full-size image" parmName="FULL_SIZE"
+                passBy="URL_REF" required="true"/>
+              <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpeg"/>
+            </fmm:Method>
+            <fmm:Method operationLabel="A medium-size image"
+              operationName="mediumSize" wsdlMsgName="mediumSizeRequest" wsdlMsgOutput="dissemResponse">
+              <fmm:DatastreamInputParm defaultValue=""
+                label="The medium-size image" parmName="MEDIUM_SIZE"
+                passBy="URL_REF" required="true"/>
+              <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpeg"/>
+            </fmm:Method>
+          </fmm:MethodMap>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="DSINPUTSPEC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.203Z" ID="DSINPUTSPEC1.0">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.1"
+        LABEL="Datastream Input Specification" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fbs:DSInputSpec
+            label="Datastream Input Specification for Dual Resolution Image Implementation" xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec">
+            <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="FULL_SIZE">
+              <fbs:DSInputLabel>FULL_SIZE Binding</fbs:DSInputLabel>
+              <fbs:DSMIME>image/jpeg</fbs:DSMIME>
+              <fbs:DSInputInstruction/>
+            </fbs:DSInput>
+            <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="MEDIUM_SIZE">
+              <fbs:DSInputLabel>MEDIUM_SIZE Binding</fbs:DSInputLabel>
+              <fbs:DSMIME>image/jpeg</fbs:DSMIME>
+              <fbs:DSInputInstruction/>
+            </fbs:DSInput>
+          </fbs:DSInputSpec>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="WSDL" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.203Z" ID="WSDL1.0">
+      <METS:mdWrap FORMAT_URI="http://schemas.xmlsoap.org/wsdl/"
+        LABEL="WSDL Bindings" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <wsdl:definitions name="DualResolutionImageImplementation"
+            targetNamespace="bmech"
+            xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+            xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+            xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap"
+            xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding"
+            xmlns:this="bmech" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <wsdl:types>
+              <xsd:schema targetNamespace="bmech">
+                <xsd:simpleType name="FULL_SIZEType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="MEDIUM_SIZEType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+              </xsd:schema>
+            </wsdl:types>
+            <wsdl:message name="fullSizeRequest">
+              <wsdl:part name="FULL_SIZE" type="this:FULL_SIZEType"/>
+            </wsdl:message>
+            <wsdl:message name="mediumSizeRequest">
+              <wsdl:part name="MEDIUM_SIZE" type="this:MEDIUM_SIZEType"/>
+            </wsdl:message>
+            <wsdl:message name="dissemResponse">
+              <wsdl:part name="dissem" type="xsd:base64Binary"/>
+            </wsdl:message>
+            <wsdl:portType name="DualResImageImplPortType">
+              <wsdl:operation name="fullSize">
+                <wsdl:input message="this:fullSizeRequest"/>
+                <wsdl:output message="this:dissemResponse"/>
+              </wsdl:operation>
+              <wsdl:operation name="mediumSize">
+                <wsdl:input message="this:mediumSizeRequest"/>
+                <wsdl:output message="this:dissemResponse"/>
+              </wsdl:operation>
+            </wsdl:portType>
+            <wsdl:service name="DualResImageImpl">
+              <wsdl:port binding="this:DualResImageImpl_http" name="DualResImageImpl_port">
+                <http:address location="LOCAL"/>
+              </wsdl:port>
+            </wsdl:service>
+            <wsdl:binding name="DualResImageImpl_http" type="this:DualResImageImplPortType">
+              <http:binding verb="GET"/>
+              <wsdl:operation name="fullSize">
+                <http:operation location="(FULL_SIZE)"/>
+                <wsdl:input>
+                  <http:urlReplacement/>
+                </wsdl:input>
+                <wsdl:output>
+                  <mime:content type="image/jpeg"/>
+                </wsdl:output>
+              </wsdl:operation>
+              <wsdl:operation name="mediumSize">
+                <http:operation location="(MEDIUM_SIZE)"/>
+                <wsdl:input>
+                  <http:urlReplacement/>
+                </wsdl:input>
+                <wsdl:output>
+                  <mime:content type="image/jpeg"/>
+                </wsdl:output>
+              </wsdl:operation>
+            </wsdl:binding>
+          </wsdl:definitions>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+</METS:mets>

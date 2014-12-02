@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:29</id>
+  <title type="text">Data Object for Image Manipulation Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:29/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <link href="info:fedora/demo:29/DC/2008-07-02T05:09:43.234Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:29/DC/2008-07-02T05:09:43.234Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:29/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Coliseum in Rome</dc:title>
+        <dc:creator>Thornton Staples</dc:creator>
+        <dc:subject>Architecture, Roman</dc:subject>
+        <dc:description>Image of Coliseum in Rome</dc:description>
+        <dc:publisher>University of Virginia Library</dc:publisher>
+        <dc:format>image/jpeg</dc:format>
+        <dc:identifier>demo:29</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:29/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <link href="info:fedora/demo:29/RELS-EXT/2008-07-02T05:09:43.234Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:29/RELS-EXT/2008-07-02T05:09:43.234Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:29/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:29">
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:UVA_STD_IMAGE"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:29/url</id>
+    <title type="text">url</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <link href="info:fedora/demo:29/url/2008-07-02T05:09:43.234Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:29/url/2008-07-02T05:09:43.234Z</id>
+    <title type="text">url1.0</title>
+    <updated>2008-07-02T05:09:43.234Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:29/url"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Thorny's Coliseum high jpg image"/>
+    <summary type="text">url1.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-image-demo/coliseum-high.jpg" type="image/jpeg"/>
+  </entry>
+</feed>

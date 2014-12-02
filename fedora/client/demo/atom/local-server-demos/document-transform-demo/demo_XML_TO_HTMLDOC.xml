@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:XML_TO_HTMLDOC</id>
+  <title type="text">Content Model Object for Document Transform Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:XML_TO_HTMLDOC/DC</id>
+    <title type="text">DC</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <link href="info:fedora/demo:XML_TO_HTMLDOC/DC/2007-08-15T14:36:30.369Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:XML_TO_HTMLDOC/DC/2007-08-15T14:36:30.369Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:XML_TO_HTMLDOC/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Content Model Object for Document Transform Demo</dc:title>
+        <dc:identifier>demo:XML_TO_HTMLDOC</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:XML_TO_HTMLDOC/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <link
+      href="info:fedora/demo:XML_TO_HTMLDOC/RELS-EXT/2007-08-15T14:36:30.369Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:XML_TO_HTMLDOC/RELS-EXT/2007-08-15T14:36:30.369Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:XML_TO_HTMLDOC/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:XML_TO_HTMLDOC">
+          <fedora-model:hasService rdf:resource="info:fedora/demo:12"/>
+          <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:XML_TO_HTMLDOC/DS-COMPOSITE-MODEL</id>
+    <title type="text">DS-COMPOSITE-MODEL</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <link
+      href="info:fedora/demo:XML_TO_HTMLDOC/DS-COMPOSITE-MODEL/2007-08-15T14:36:30.369Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:XML_TO_HTMLDOC/DS-COMPOSITE-MODEL/2007-08-15T14:36:30.369Z</id>
+    <title type="text">DS-COMPOSITE-MODEL1.0</title>
+    <updated>2007-08-15T14:36:30.369Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:XML_TO_HTMLDOC/DS-COMPOSITE-MODEL"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Datastream Composite Model"/>
+    <content type="text/xml">
+      <dsCompositeModel xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+        <dsTypeModel ID="XML_SOURCE">
+          <form MIME="text/xml"/>
+        </dsTypeModel>
+        <dsTypeModel ID="XSL_STYLESHEET1">
+          <form MIME="text/xml"/>
+        </dsTypeModel>
+        <dsTypeModel ID="XSL_STYLESHEET2">
+          <form MIME="text/xml"/>
+        </dsTypeModel>
+      </dsCompositeModel>
+    </content>
+  </entry>
+</feed>

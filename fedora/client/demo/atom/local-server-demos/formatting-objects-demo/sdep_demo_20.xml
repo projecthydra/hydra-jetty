@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:20</id>
+  <title type="text">Service Deployment Object (FO to PDF) for Formatting Objects Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:20/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <link href="info:fedora/demo:20/DC/2008-07-02T05:09:42.828Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:20/DC/2008-07-02T05:09:42.828Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:20/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Service Deployment Object (FO to PDF) for Formatting Objects Demo</dc:title>
+        <dc:identifier>demo:20</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:20/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <link href="info:fedora/demo:20/RELS-EXT/2008-07-02T05:09:42.828Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:20/RELS-EXT/2008-07-02T05:09:42.828Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:20/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:20">
+          <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"/>
+          <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:19"/>
+          <fedora-model:isContractorOf rdf:resource="info:fedora/demo:FO_TO_PDFDOC"/>
+          <fedora-model:isContractorOf rdf:resource="info:fedora/demo:TEI_TO_PDFDOC"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:20/METHODMAP</id>
+    <title type="text">METHODMAP</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <link href="info:fedora/demo:20/METHODMAP/2008-07-02T05:09:42.828Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:20/METHODMAP/2008-07-02T05:09:42.828Z</id>
+    <title type="text">METHODMAP1.0</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:20/METHODMAP"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraSDepMethodMap-1.1"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Deployment Method Map"/>
+    <content type="text/xml">
+      <fmm:MethodMap name="MethodMap - PDF BDEF Methods" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+        <fmm:Method operationName="getPDF" wsdlMsgName="getPDF" wsdlMsgOutput="response">
+          <fmm:DatastreamInputParm parmName="XML_SOURCE" passBy="URL_REF" required="true"/>
+          <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="application/pdf"/>
+        </fmm:Method>
+      </fmm:MethodMap>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:20/DSINPUTSPEC</id>
+    <title type="text">DSINPUTSPEC</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <link href="info:fedora/demo:20/DSINPUTSPEC/2008-07-02T05:09:42.828Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:20/DSINPUTSPEC/2008-07-02T05:09:42.828Z</id>
+    <title type="text">DSINPUTSPEC1.0</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:20/DSINPUTSPEC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraDSInputSpec-1.1"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Datastream Input Specification"/>
+    <content type="text/xml">
+      <fbs:DSInputSpec label="Mapping to the Fedora Local FOP Service" xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec">
+        <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="XML_SOURCE">
+          <fbs:DSInputLabel>XML source file</fbs:DSInputLabel>
+          <fbs:DSMIME>text/xml</fbs:DSMIME>
+          <fbs:DSInputInstruction>XML source file to be transformed</fbs:DSInputInstruction>
+        </fbs:DSInput>
+      </fbs:DSInputSpec>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:20/WSDL</id>
+    <title type="text">WSDL</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <link href="info:fedora/demo:20/WSDL/2008-07-02T05:09:42.828Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:20/WSDL/2008-07-02T05:09:42.828Z</id>
+    <title type="text">WSDL1.0</title>
+    <updated>2008-07-02T05:09:42.828Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:20/WSDL"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://schemas.xmlsoap.org/wsdl/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="WSDL Bindings"/>
+    <content type="text/xml">
+      <wsdl:definitions name="FedoraLocalFOPService" targetNamespace="fop"
+        xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+        xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap"
+        xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding"
+        xmlns:this="fop" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <wsdl:types>
+          <xsd:schema targetNamespace="fop">
+            <xsd:simpleType name="URLType">
+              <xsd:restriction base="xsd:string"/>
+            </xsd:simpleType>
+          </xsd:schema>
+        </wsdl:types>
+        <wsdl:message name="getPDFRequest">
+          <wsdl:part name="XML_SOURCE" type="this:URLType"/>
+        </wsdl:message>
+        <wsdl:message name="response">
+          <wsdl:part name="pdf" type="xsd:base64Binary"/>
+        </wsdl:message>
+        <wsdl:portType name="FedoraFOPPortType">
+          <wsdl:operation name="getPDF">
+            <wsdl:input message="this:getPDFRequest"/>
+            <wsdl:output message="this:response"/>
+          </wsdl:operation>
+        </wsdl:portType>
+        <wsdl:service name="FedoraFOP">
+          <wsdl:port binding="this:FedoraFOP_http" name="FedoraFOP_port">
+            <http:address location="http://local.fedora.server/fop/"/>
+          </wsdl:port>
+        </wsdl:service>
+        <wsdl:binding name="FedoraFOP_http" type="this:FedoraFOPPortType">
+          <http:binding verb="GET"/>
+          <wsdl:operation name="getPDF">
+            <http:operation location="FOPServlet?source=(XML_SOURCE)"/>
+            <wsdl:input>
+              <http:urlReplacement/>
+            </wsdl:input>
+            <wsdl:output>
+              <mime:content type="application/pdf"/>
+            </wsdl:output>
+          </wsdl:operation>
+        </wsdl:binding>
+      </wsdl:definitions>
+    </content>
+  </entry>
+</feed>

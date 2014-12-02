@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1" LABEL="Data Object (SVG) for Simple Document Demo"
+  OBJID="demo:31" xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.328Z" ID="DC1.0">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Data Object (SVG) for Simple Document Demo</dc:title>
+            <dc:creator>Chris Wilper</dc:creator>
+            <dc:creator>The Apache Group</dc:creator>
+            <dc:subject>svg</dc:subject>
+            <dc:subject>batik</dc:subject>
+            <dc:subject>apache</dc:subject>
+            <dc:description>Demonstration digital object containing SVG from the Batik 1.5 distribution</dc:description>
+            <dc:publisher>The Apache Group</dc:publisher>
+            <dc:format>image/svg+xml</dc:format>
+            <dc:identifier>demo:31</dc:identifier>
+            <dc:relation>http://xml.apache.org/batik/</dc:relation>
+            <dc:rights>The Apache License</dc:rights>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:fileSec>
+    <METS:fileGrp ID="DATASTREAMS">
+      <METS:fileGrp ID="DS1" STATUS="A" VERSIONABLE="true">
+        <METS:file CREATED="2008-07-02T05:09:43.328Z" ID="DS1.0"
+          MIMETYPE="image/svg+xml" OWNERID="E">
+          <METS:FLocat LOCTYPE="URL"
+            xlink:href="http://local.fedora.server/fedora-demo/simple-document-demo/batikBatik.svg" xlink:title="Local copy of batikBatik.svg (control group E)"/>
+        </METS:file>
+      </METS:fileGrp>
+      <METS:fileGrp ID="DS3" STATUS="A" VERSIONABLE="true">
+        <METS:file CREATED="2013-10-28T16:34:49.815Z" ID="DS3.0"
+          MIMETYPE="image/svg+xml" OWNERID="R">
+          <METS:FLocat LOCTYPE="URL"
+            xlink:href="http://local.fedora.server/fedora-demo/simple-document-demo/batikBatik.svg" xlink:title="Another local copy of batikBatik.svg (control group R)"/>
+        </METS:file>
+      </METS:fileGrp>
+    </METS:fileGrp>
+  </METS:fileSec>
+</METS:mets>

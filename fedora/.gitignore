@@ -1,0 +1,8 @@
+# Fedora 3 instance data
+default/data
+default/derby/*
+default/server/logs/*
+default/server/management/upload/*
+default/server/status
+default/server/fedora-internal-use/fedora-internal-use-backend-service-policies/
+default/server/fedora-internal-use/has-started.txt

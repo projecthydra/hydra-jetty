@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1"
+  LABEL="Service Definition Object (PDF) for Formatting Objects Demo"
+  OBJID="demo:19" xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:42.781Z" ID="DC1.0">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Service Definition Object (PDF) for Formatting Objects Demo</dc:title>
+            <dc:identifier>demo:19</dc:identifier>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="RELS-EXT" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:42.781Z" ID="RELS-EXT1.0">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+        LABEL="RDF Statements about this object" MDTYPE="OTHER"
+        MIMETYPE="application/rdf+xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="info:fedora/demo:19">
+              <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDefinition-3.0"/>
+            </rdf:Description>
+          </rdf:RDF>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="METHODMAP" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:42.781Z" ID="METHODMAP1.0">
+      <METS:mdWrap
+        FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0"
+        LABEL="Abstract Method Map" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fmm:MethodMap name="Fedora MethodMap for PDFs" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+            <fmm:Method operationName="getPDF"/>
+          </fmm:MethodMap>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+</METS:mets>

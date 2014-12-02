@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:SmileyStuff</id>
+  <title type="text">Data Object (Collection) for Image Collection Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:SmileyStuff/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <link href="info:fedora/demo:SmileyStuff/DC/2008-07-02T05:09:43.062Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyStuff/DC/2008-07-02T05:09:43.062Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyStuff/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Collection of Smiley Stuff</dc:title>
+        <dc:description>This is Deb's collection of smiley stuff.</dc:description>
+        <dc:identifier>demo:SmileyStuff</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyStuff/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <link href="info:fedora/demo:SmileyStuff/RELS-EXT/2008-07-02T05:09:43.062Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyStuff/RELS-EXT/2008-07-02T05:09:43.062Z</id>
+    <title type="text">RELS-EXT.0</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyStuff/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:SmileyStuff">
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:DualResImageCollection"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyStuff/QUERY</id>
+    <title type="text">QUERY</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <link href="info:fedora/demo:SmileyStuff/QUERY/2008-07-02T05:09:43.062Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyStuff/QUERY/2008-07-02T05:09:43.062Z</id>
+    <title type="text">QUERY.0</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyStuff/QUERY"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Query to list members"/>
+    <summary type="text">QUERY.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyStuff-MemberQuery.txt" type="text/plain"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyStuff/XSLT</id>
+    <title type="text">XSLT</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <link href="info:fedora/demo:SmileyStuff/XSLT/2008-07-02T05:09:43.062Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyStuff/XSLT/2008-07-02T05:09:43.062Z</id>
+    <title type="text">XSLT.0</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyStuff/XSLT"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Stylesheet to view list dissemination as html"/>
+    <summary type="text">XSLT.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyStuff-ViewStylesheet.xsl" type="text/xml"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyStuff/LIST</id>
+    <title type="text">LIST</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <link href="info:fedora/demo:SmileyStuff/LIST/2008-07-02T05:09:43.062Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyStuff/LIST/2008-07-02T05:09:43.062Z</id>
+    <title type="text">LIST.0</title>
+    <updated>2008-07-02T05:09:43.062Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyStuff/LIST"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Result of list dissemination"/>
+    <summary type="text">LIST.0</summary>
+    <content
+      src="http://local.fedora.server/fedora/get/demo:SmileyStuff/demo:Collection/list" type="text/xml"/>
+  </entry>
+</feed>

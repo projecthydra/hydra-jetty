@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:26</id>
+  <title type="text">Data Object (TEI to PDF) for Formatting Objects Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:26/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <link href="info:fedora/demo:26/DC/2008-07-02T05:09:42.765Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:26/DC/2008-07-02T05:09:42.765Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:26/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>The Purple Cow</dc:title>
+        <dc:creator>Frank Gelett Burgess</dc:creator>
+        <dc:identifier>demo:26</dc:identifier>
+        <dc:rights>unrestricted</dc:rights>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:26/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <link href="info:fedora/demo:26/RELS-EXT/2008-07-02T05:09:42.765Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:26/RELS-EXT/2008-07-02T05:09:42.765Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:26/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:26">
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:TEI_TO_PDFDOC"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:26/XML_SOURCE</id>
+    <title type="text">XML_SOURCE</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <link href="info:fedora/demo:26/XML_SOURCE/2008-07-02T05:09:42.765Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:26/XML_SOURCE/2008-07-02T05:09:42.765Z</id>
+    <title type="text">XML_SOURCE1.0</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:26/XML_SOURCE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="FOP Dissemination as Datastream"/>
+    <summary type="text">XML_SOURCE1.0</summary>
+    <content src="http://local.fedora.server/fedora/get/demo:26/demo:22/getFO" type="text/xml"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:26/TEI_SOURCE</id>
+    <title type="text">TEI_SOURCE</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <link href="info:fedora/demo:26/TEI_SOURCE/2008-07-02T05:09:42.765Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:26/TEI_SOURCE/2008-07-02T05:09:42.765Z</id>
+    <title type="text">TEI_SOURCE1.0</title>
+    <updated>2008-07-02T05:09:42.765Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:26/TEI_SOURCE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="TEI Source"/>
+    <content type="text/xml">
+      <TEI.2 xmlns="">
+        <teiHeader>
+          <fileDesc>
+            <titleStmt>
+              <title>The Purple Cow</title>
+              <author>Frank Gelett Burgess</author>
+            </titleStmt>
+            <publicationStmt>
+              <p>Text entry by 
+                <name>Walter Underwood</name>(wunder@infoseek.com) on
+      
+                <date>1999-02-01</date>. This transcription is in the public domain.</p>
+            </publicationStmt>
+            <sourceDesc>
+              <p>From the 
+                <title>The Lark</title>, San Fransicsco, 
+                <date>1896</date>.</p>
+            </sourceDesc>
+          </fileDesc>
+        </teiHeader>
+        <text>
+          <body>
+            <div1 type="poem">
+              <head>The Purple Cow</head>
+              <lg>
+                <l>I never saw a purple cow,</l>
+                <l>I never hope to see one;</l>
+                <l>But I can tell you, anyhow,</l>
+                <l>I'd rather see than be one.</l>
+              </lg>
+            </div1>
+          </body>
+        </text>
+      </TEI.2>
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:5</id>
+  <title type="text">Data Object (Coliseum) for Local Simple Image Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:5/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/DC/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/DC/2008-07-02T05:09:43.375Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Coliseum in Rome</dc:title>
+        <dc:creator>Thornton Staples</dc:creator>
+        <dc:subject>Architecture, Roman</dc:subject>
+        <dc:description>Image of Coliseum in Rome</dc:description>
+        <dc:publisher>University of Virginia Library</dc:publisher>
+        <dc:format>image/jpeg</dc:format>
+        <dc:identifier>demo:5</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:5/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/RELS-EXT/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/RELS-EXT/2008-07-02T05:09:43.375Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:5">
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:UVA_STD_IMAGE_1"/>
+          <prefLabel xml:lang="it" xmlns="http://www.w3.org/2004/02/skos/core#">Immagine del Colosseo a Roma</prefLabel>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:5/THUMBRES_IMG</id>
+    <title type="text">THUMBRES_IMG</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/THUMBRES_IMG/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/THUMBRES_IMG/2008-07-02T05:09:43.375Z</id>
+    <title type="text">THUMBRES_IMG1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/THUMBRES_IMG"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Thorny's Coliseum thumbnail jpg image"/>
+    <summary type="text">THUMBRES_IMG1.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-image-demo/coliseum-thumb.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:5/MEDRES_IMG</id>
+    <title type="text">MEDRES_IMG</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/MEDRES_IMG/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/MEDRES_IMG/2008-07-02T05:09:43.375Z</id>
+    <title type="text">MEDRES_IMG1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/MEDRES_IMG"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Thorny's Coliseum medium jpg image"/>
+    <summary type="text">MEDRES_IMG1.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-image-demo/coliseum-medium.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:5/HIGHRES_IMG</id>
+    <title type="text">HIGHRES_IMG</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/HIGHRES_IMG/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/HIGHRES_IMG/2008-07-02T05:09:43.375Z</id>
+    <title type="text">HIGHRES_IMG1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/HIGHRES_IMG"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Thorny's Coliseum high jpg image"/>
+    <summary type="text">HIGHRES_IMG1.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-image-demo/coliseum-high.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:5/VERYHIGHRES_IMG</id>
+    <title type="text">VERYHIGHRES_IMG</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <link href="info:fedora/demo:5/VERYHIGHRES_IMG/2008-07-02T05:09:43.375Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:5/VERYHIGHRES_IMG/2008-07-02T05:09:43.375Z</id>
+    <title type="text">VERYHIGHRES_IMG1.0</title>
+    <updated>2008-07-02T05:09:43.375Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:5/VERYHIGHRES_IMG"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Thorny's Coliseum veryhigh jpg image"/>
+    <summary type="text">VERYHIGHRES_IMG1.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/simple-image-demo/coliseum-veryhigh.jpg" type="image/jpeg"/>
+  </entry>
+</feed>

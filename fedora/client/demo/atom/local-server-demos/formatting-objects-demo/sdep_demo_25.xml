@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:25</id>
+  <title type="text">Service Deployment Object (TEI to FO) for Formatting Objects Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:25/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <link href="info:fedora/demo:25/DC/2008-07-02T05:09:42.859Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:25/DC/2008-07-02T05:09:42.859Z</id>
+    <title type="text">DC1.0</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:25/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Service Deployment Object (TEI to FO) for Formatting Objects Demo</dc:title>
+        <dc:identifier>demo:25</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:25/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <link href="info:fedora/demo:25/RELS-EXT/2008-07-02T05:09:42.859Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:25/RELS-EXT/2008-07-02T05:09:42.859Z</id>
+    <title type="text">RELS-EXT1.0</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:25/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:25">
+          <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"/>
+          <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:22"/>
+          <fedora-model:isContractorOf rdf:resource="info:fedora/demo:TEI_TO_PDFDOC"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:25/METHODMAP</id>
+    <title type="text">METHODMAP</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <link href="info:fedora/demo:25/METHODMAP/2008-07-02T05:09:42.859Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:25/METHODMAP/2008-07-02T05:09:42.859Z</id>
+    <title type="text">METHODMAP1.0</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:25/METHODMAP"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraSDepMethodMap-1.1"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Deployment Method Map"/>
+    <content type="text/xml">
+      <fmm:MethodMap name="MethodMap - FO BDEF Methods" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+        <fmm:Method operationName="getFO" wsdlMsgName="getFORequest" wsdlMsgOutput="response">
+          <fmm:DatastreamInputParm parmName="TEI_SOURCE" passBy="URL_REF" required="true"/>
+          <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="text/xml"/>
+        </fmm:Method>
+      </fmm:MethodMap>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:25/DSINPUTSPEC</id>
+    <title type="text">DSINPUTSPEC</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <link href="info:fedora/demo:25/DSINPUTSPEC/2008-07-02T05:09:42.859Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:25/DSINPUTSPEC/2008-07-02T05:09:42.859Z</id>
+    <title type="text">DSINPUTSPEC1.0</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:25/DSINPUTSPEC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraDSInputSpec-1.1"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Datastream Input Specification"/>
+    <content type="text/xml">
+      <fbs:DSInputSpec label="Mapping to the Fedora Local Saxon Service" xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec">
+        <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="TEI_SOURCE">
+          <fbs:DSInputLabel>TEI source file</fbs:DSInputLabel>
+          <fbs:DSMIME>text/xml</fbs:DSMIME>
+          <fbs:DSInputInstruction>XML source file in TEI format, to be transformed to FO format
+                        </fbs:DSInputInstruction>
+        </fbs:DSInput>
+      </fbs:DSInputSpec>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:25/WSDL</id>
+    <title type="text">WSDL</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <link href="info:fedora/demo:25/WSDL/2008-07-02T05:09:42.859Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:25/WSDL/2008-07-02T05:09:42.859Z</id>
+    <title type="text">WSDL1.0</title>
+    <updated>2008-07-02T05:09:42.859Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:25/WSDL"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://schemas.xmlsoap.org/wsdl/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="WSDL Bindings"/>
+    <content type="text/xml">
+      <wsdl:definitions name="FedoraLocalSaxonService" targetNamespace="saxon"
+        xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+        xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap"
+        xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding"
+        xmlns:this="saxon" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <wsdl:types>
+          <xsd:schema targetNamespace="saxon">
+            <xsd:simpleType name="URLType">
+              <xsd:restriction base="xsd:string"/>
+            </xsd:simpleType>
+          </xsd:schema>
+        </wsdl:types>
+        <wsdl:message name="getFORequest">
+          <wsdl:part name="TEI_SOURCE" type="this:URLType"/>
+        </wsdl:message>
+        <wsdl:message name="response">
+          <wsdl:part name="fo" type="xsd:base64Binary"/>
+        </wsdl:message>
+        <wsdl:portType name="FedoraSaxonPortType">
+          <wsdl:operation name="getFO">
+            <wsdl:input message="this:getFORequest"/>
+            <wsdl:output message="this:response"/>
+          </wsdl:operation>
+        </wsdl:portType>
+        <wsdl:service name="FedoraSaxon">
+          <wsdl:port binding="this:FedoraSaxon_http" name="FedoraSaxon_port">
+            <http:address location="http://local.fedora.server/saxon/"/>
+          </wsdl:port>
+        </wsdl:service>
+        <wsdl:binding name="FedoraSaxon_http" type="this:FedoraSaxonPortType">
+          <http:binding verb="GET"/>
+          <wsdl:operation name="getFO">
+            <http:operation location="SaxonServlet?source=(TEI_SOURCE)&amp;style=http://local.fedora.server/fedora-demo/formatting-objects-demo/fo/tei.xsl"/>
+            <wsdl:input>
+              <http:urlReplacement/>
+            </wsdl:input>
+            <wsdl:output>
+              <mime:content type="text/xml"/>
+            </wsdl:output>
+          </wsdl:operation>
+        </wsdl:binding>
+      </wsdl:definitions>
+    </content>
+  </entry>
+</feed>

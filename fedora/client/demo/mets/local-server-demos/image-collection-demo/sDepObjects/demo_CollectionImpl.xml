@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1"
+  LABEL="Service Deployment Object (Collection) for Image Collection Demo"
+  OBJID="demo:CollectionImpl" xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.171Z" ID="DC1.0">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Service Deployment Object (Collection) for Image Collection Demo</dc:title>
+            <dc:identifier>demo:ImageCollectionImpl</dc:identifier>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="RELS-EXT" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.171Z" ID="RELS-EXT.1">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+        LABEL="RDF Statements about this object" MDTYPE="OTHER"
+        MIMETYPE="application/rdf+xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="info:fedora/demo:CollectionImpl">
+              <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"/>
+              <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:Collection"/>
+              <fedora-model:isContractorOf rdf:resource="info:fedora/demo:DualResImageCollection"/>
+            </rdf:Description>
+          </rdf:RDF>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="METHODMAP" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.171Z" ID="METHODMAP1.0">
+      <METS:mdWrap
+        FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.1"
+        LABEL="Deployment Method Map" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fmm:MethodMap name="MethodMap - Image Collection" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+            <fmm:Method
+              operationLabel="An html representation of the collection"
+              operationName="view" wsdlMsgName="viewRequest" wsdlMsgOutput="dissemResponse">
+              <fmm:DatastreamInputParm
+                label="Stylesheet to transform LIST into html" parmName="XSLT"
+                passBy="URL_REF" required="true"/>
+              <fmm:DatastreamInputParm
+                label="The result of the list dissemination as a datastream"
+                parmName="LIST" passBy="URL_REF" required="true"/>
+              <fmm:DefaultInputParm defaultValue="yes"
+                label="Whether to reload the stylesheet each time"
+                parmName="CLEAR_CACHE" passBy="VALUE" required="true"/>
+              <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/html"/>
+            </fmm:Method>
+            <fmm:Method
+              operationLabel="An xml list of members in the collection"
+              operationName="list" wsdlMsgName="listRequest" wsdlMsgOutput="dissemResponse">
+              <fmm:DatastreamInputParm defaultValue="" label="" parmName="QUERY"
+                passBy="URL_REF" required="true"/>
+              <fmm:DefaultInputParm defaultValue="tuples" label=""
+                parmName="TYPE" passBy="VALUE" required="true"/>
+              <fmm:DefaultInputParm defaultValue="itql" label="" parmName="LANG"
+                passBy="VALUE" required="true"/>
+              <fmm:DefaultInputParm defaultValue="Sparql" label=""
+                parmName="FORMAT" passBy="VALUE" required="true"/>
+              <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"/>
+            </fmm:Method>
+          </fmm:MethodMap>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="DSINPUTSPEC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2004-12-17T15:32:11.000Z" ID="DSINPUTSPEC1.0">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.1"
+        LABEL="Datastream Input Specification" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fbs:DSInputSpec
+            label="Datastream Input Specification for Image Collection" xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec">
+            <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="XSLT">
+              <fbs:DSInputLabel>XSLT Binding</fbs:DSInputLabel>
+              <fbs:DSMIME>text/xml</fbs:DSMIME>
+              <fbs:DSInputInstruction/>
+            </fbs:DSInput>
+            <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="LIST">
+              <fbs:DSInputLabel>LIST Binding</fbs:DSInputLabel>
+              <fbs:DSMIME>text/xml</fbs:DSMIME>
+              <fbs:DSInputInstruction/>
+            </fbs:DSInput>
+            <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="QUERY">
+              <fbs:DSInputLabel>QUERY Binding</fbs:DSInputLabel>
+              <fbs:DSMIME>text/plain</fbs:DSMIME>
+              <fbs:DSInputInstruction/>
+            </fbs:DSInput>
+          </fbs:DSInputSpec>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="WSDL" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.171Z" ID="WSDL1.0">
+      <METS:mdWrap FORMAT_URI="http://schemas.xmlsoap.org/wsdl/"
+        LABEL="WSDL Bindings" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <wsdl:definitions name="ImageCollection" targetNamespace="bmech"
+            xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+            xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+            xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap"
+            xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding"
+            xmlns:this="bmech" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <wsdl:types>
+              <xsd:schema targetNamespace="bmech">
+                <xsd:simpleType name="TYPEType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="QUERYType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="XSLTType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="LANGType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="LISTType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="CLEAR_CACHEType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+                <xsd:simpleType name="FORMATType">
+                  <xsd:restriction base="xsd:string"/>
+                </xsd:simpleType>
+              </xsd:schema>
+            </wsdl:types>
+            <wsdl:message name="viewRequest">
+              <wsdl:part name="XSLT" type="this:XSLTType"/>
+              <wsdl:part name="LIST" type="this:LISTType"/>
+              <wsdl:part name="CLEAR_CACHE" type="this:CLEAR_CACHEType"/>
+            </wsdl:message>
+            <wsdl:message name="listRequest">
+              <wsdl:part name="TYPE" type="this:TYPEType"/>
+              <wsdl:part name="QUERY" type="this:QUERYType"/>
+              <wsdl:part name="LANG" type="this:LANGType"/>
+              <wsdl:part name="FORMAT" type="this:FORMATType"/>
+            </wsdl:message>
+            <wsdl:message name="dissemResponse">
+              <wsdl:part name="dissem" type="xsd:base64Binary"/>
+            </wsdl:message>
+            <wsdl:portType name="ImageCollectionPortType">
+              <wsdl:operation name="view">
+                <wsdl:input message="this:viewRequest"/>
+                <wsdl:output message="this:dissemResponse"/>
+              </wsdl:operation>
+              <wsdl:operation name="list">
+                <wsdl:input message="this:listRequest"/>
+                <wsdl:output message="this:dissemResponse"/>
+              </wsdl:operation>
+            </wsdl:portType>
+            <wsdl:service name="ImageCollection">
+              <wsdl:port binding="this:ImageCollection_http" name="ImageCollection_port">
+                <http:address location="LOCAL"/>
+              </wsdl:port>
+            </wsdl:service>
+            <wsdl:binding name="ImageCollection_http" type="this:ImageCollectionPortType">
+              <http:binding verb="GET"/>
+              <wsdl:operation name="view">
+                <http:operation location="http://local.fedora.server/saxon/SaxonServlet?source=(LIST)&amp;style=(XSLT)&amp;clear-stylesheet-cache=(CLEAR_CACHE)"/>
+                <wsdl:input>
+                  <http:urlReplacement/>
+                </wsdl:input>
+                <wsdl:output>
+                  <mime:content type="text/html"/>
+                </wsdl:output>
+              </wsdl:operation>
+              <wsdl:operation name="list">
+                <http:operation location="http://local.fedora.server/fedora/risearch?type=(TYPE)&amp;lang=(LANG)&amp;format=(FORMAT)&amp;query=(QUERY)"/>
+                <wsdl:input>
+                  <http:urlReplacement/>
+                </wsdl:input>
+                <wsdl:output>
+                  <mime:content type="text/xml"/>
+                </wsdl:output>
+              </wsdl:operation>
+            </wsdl:binding>
+          </wsdl:definitions>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+</METS:mets>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets EXT_VERSION="1.1"
+  LABEL="Service Definition Object for Image Manipulation Demo" OBJID="demo:27"
+  xmlns:METS="http://www.loc.gov/METS/"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+  <METS:metsHdr CREATEDATE="2008-07-02T05:09:42.015Z"
+    LASTMODDATE="2008-07-02T05:09:42.015Z" RECORDSTATUS="Active">
+    <METS:agent ROLE="IPOWNER">
+      <METS:name>fedoraAdmin</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.250Z" ID="DC1.0">
+      <METS:mdWrap FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        LABEL="Dublin Core Record for this object" MDTYPE="OTHER"
+        MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+            <dc:title>Service Definition Object for Image Manipulation Demo</dc:title>
+            <dc:identifier>demo:27</dc:identifier>
+          </oai_dc:dc>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="RELS-EXT" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.250Z" ID="RELS-EXT1.0">
+      <METS:mdWrap FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+        LABEL="RDF Statements about this object" MDTYPE="OTHER"
+        MIMETYPE="application/rdf+xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="info:fedora/demo:27">
+              <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDefinition-3.0"/>
+            </rdf:Description>
+          </rdf:RDF>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+  <METS:amdSec ID="METHODMAP" STATUS="A" VERSIONABLE="true">
+    <METS:techMD CREATED="2008-07-02T05:09:43.250Z" ID="METHODMAP1.0">
+      <METS:mdWrap
+        FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0"
+        LABEL="Abstract Method Map" MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="UNSPECIFIED">
+        <METS:xmlData>
+          <fmm:MethodMap name="Fedora MethodMap for Image Manipulation Servlet" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+            <fmm:Method operationName="resizeImage">
+              <fmm:UserInputParm defaultValue="150" parmName="width"
+                passBy="VALUE" required="true"/>
+            </fmm:Method>
+            <fmm:Method operationName="zoomImage">
+              <fmm:UserInputParm defaultValue="3" parmName="zoom" passBy="VALUE" required="true"/>
+            </fmm:Method>
+            <fmm:Method operationName="brightImage">
+              <fmm:UserInputParm defaultValue="3.5" parmName="bright"
+                passBy="VALUE" required="true"/>
+            </fmm:Method>
+            <fmm:Method operationName="watermarkImage">
+              <fmm:UserInputParm defaultValue="Watermarked 2003"
+                parmName="watermark" passBy="VALUE" required="true"/>
+            </fmm:Method>
+            <fmm:Method operationName="grayscaleImage"/>
+            <fmm:Method operationName="cropImage">
+              <fmm:UserInputParm defaultValue="30" parmName="x" passBy="VALUE" required="true"/>
+              <fmm:UserInputParm defaultValue="100" parmName="y" passBy="VALUE" required="true"/>
+              <fmm:UserInputParm defaultValue="" parmName="width" passBy="VALUE" required="false"/>
+              <fmm:UserInputParm defaultValue="" parmName="height"
+                passBy="VALUE" required="false"/>
+            </fmm:Method>
+            <fmm:Method operationName="convertImage">
+              <fmm:UserInputParm defaultValue="gif" parmName="convertTo"
+                passBy="VALUE" required="true">
+                <fmm:ValidParmValues>
+                  <fmm:ValidParm value="jpg"/>
+                  <fmm:ValidParm value="gif"/>
+                  <fmm:ValidParm value="tiff"/>
+                  <fmm:ValidParm value="png"/>
+                  <fmm:ValidParm value="bmp"/>
+                </fmm:ValidParmValues>
+              </fmm:UserInputParm>
+            </fmm:Method>
+          </fmm:MethodMap>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:techMD>
+  </METS:amdSec>
+</METS:mets>

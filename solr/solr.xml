@@ -31,5 +31,6 @@
   <cores adminPath="/admin/cores" defaultCoreName="development">
     <core name="development" instanceDir="development-core" />
     <core name="test" instanceDir="test-core" />
+    <core name="fedora3" instanceDir="fedora3-core" />
   </cores>
 </solr>

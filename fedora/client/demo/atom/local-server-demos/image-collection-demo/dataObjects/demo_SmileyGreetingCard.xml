@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>info:fedora/demo:SmileyGreetingCard</id>
+  <title type="text">Data Object (Smiley Greeting Card) for Image Collection Demo</title>
+  <updated>2008-07-02T05:09:42.015Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+  </author>
+  <category scheme="info:fedora/fedora-system:def/model#state" term="Active"/>
+  <category scheme="info:fedora/fedora-system:def/model#createdDate" term="2008-07-02T05:09:42.015Z"/>
+  <icon>http://www.fedora-commons.org/images/logo_vertical_transparent_200_251.png</icon>
+  <entry>
+    <id>info:fedora/demo:SmileyGreetingCard/DC</id>
+    <title type="text">DC</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <link href="info:fedora/demo:SmileyGreetingCard/DC/2008-07-02T05:09:43.000Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyGreetingCard/DC/2008-07-02T05:09:43.000Z</id>
+    <title type="text">DC.1</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyGreetingCard/DC"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="http://www.openarchives.org/OAI/2.0/oai_dc/"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Dublin Core Record for this object"/>
+    <content type="text/xml">
+      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+        <dc:title>Smiley Greeting Card</dc:title>
+        <dc:description>Great for people who still use snail mail.</dc:description>
+        <dc:identifier>demo:SmileyGreetingCard</dc:identifier>
+      </oai_dc:dc>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyGreetingCard/RELS-EXT</id>
+    <title type="text">RELS-EXT</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <link
+      href="info:fedora/demo:SmileyGreetingCard/RELS-EXT/2008-07-02T05:09:43.000Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyGreetingCard/RELS-EXT/2008-07-02T05:09:43.000Z</id>
+    <title type="text">RELS-EXT.0</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyGreetingCard/RELS-EXT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSExt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rel="info:fedora/fedora-system:def/relations-external#">
+        <rdf:Description rdf:about="info:fedora/demo:SmileyGreetingCard">
+          <rel:isMemberOf rdf:resource="info:fedora/demo:SmileyStuff"/>
+          <fedora-model:hasModel rdf:resource="info:fedora/demo:DualResImage"/>
+          <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:FedoraObject-3.0"/>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyGreetingCard/RELS-INT</id>
+    <title type="text">RELS-INT</title>
+    <updated>2009-07-01T14:23:00.046Z</updated>
+    <link
+      href="info:fedora/demo:SmileyGreetingCard/RELS-INT/2009-07-01T14:23:00.046Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="X"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyGreetingCard/RELS-INT/2009-07-01T14:23:00.046Z</id>
+    <title type="text">RELS-INT.0</title>
+    <updated>2009-07-01T14:23:00.046Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyGreetingCard/RELS-INT"/>
+    <category scheme="info:fedora/fedora-system:def/model#formatURI" term="info:fedora/fedora-system:FedoraRELSInt-1.0"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="RDF Statements about this object's datastream(s)"/>
+    <content type="application/rdf+xml">
+      <rdf:RDF xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="info:fedora/demo:SmileyGreetingCard/MEDIUM_SIZE">
+          <exif:PixelXDimension>320</exif:PixelXDimension>
+          <exif:PixelYDimension>240</exif:PixelYDimension>
+        </rdf:Description>
+        <rdf:Description rdf:about="info:fedora/demo:SmileyGreetingCard/FULL_SIZE">
+          <exif:PixelXDimension>800</exif:PixelXDimension>
+          <exif:PixelYDimension>600</exif:PixelYDimension>
+        </rdf:Description>
+      </rdf:RDF>
+    </content>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyGreetingCard/MEDIUM_SIZE</id>
+    <title type="text">MEDIUM_SIZE</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <link
+      href="info:fedora/demo:SmileyGreetingCard/MEDIUM_SIZE/2008-07-02T05:09:43.000Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyGreetingCard/MEDIUM_SIZE/2008-07-02T05:09:43.000Z</id>
+    <title type="text">MediumSize.jpg.0</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyGreetingCard/MEDIUM_SIZE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Medium-size image"/>
+    <summary type="text">MediumSize.jpg.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyGreetingCard-MediumSize.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <id>info:fedora/demo:SmileyGreetingCard/FULL_SIZE</id>
+    <title type="text">FULL_SIZE</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <link
+      href="info:fedora/demo:SmileyGreetingCard/FULL_SIZE/2008-07-02T05:09:43.000Z" rel="alternate"/>
+    <category scheme="info:fedora/fedora-system:def/model#state" term="A"/>
+    <category scheme="info:fedora/fedora-system:def/model#controlGroup" term="E"/>
+    <category scheme="info:fedora/fedora-system:def/model#versionable" term="true"/>
+  </entry>
+  <entry xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>info:fedora/demo:SmileyGreetingCard/FULL_SIZE/2008-07-02T05:09:43.000Z</id>
+    <title type="text">FullSize.jpg.0</title>
+    <updated>2008-07-02T05:09:43.000Z</updated>
+    <thr:in-reply-to ref="info:fedora/demo:SmileyGreetingCard/FULL_SIZE"/>
+    <category scheme="info:fedora/fedora-system:def/model#label" term="Full-size image"/>
+    <summary type="text">FullSize.jpg.0</summary>
+    <content
+      src="http://local.fedora.server/fedora-demo/image-collection-demo/SmileyGreetingCard-FullSize.jpg" type="image/jpeg"/>
+  </entry>
+</feed>
