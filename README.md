@@ -41,7 +41,23 @@ For use within your Hydra application's Rails directory.
 
 See [jettywrapper](https://github.com/projecthydra/jettywrapper) for more information regarding configuration and usage.
 Port numbers and other java options maybe configured via the gem. 
-    
+
+### Fedora Resource Index
+
+This installation of Fedora has the Resource Index enabled.  If you wish to disable the Resource Index for your development or test copies of Fedora, you can do so by modifying, respectfully, fedora/default/server/config/fedora.fcfg or fedora/test/server/config/fedora.fcfg.
+
+Change this: 
+
+    <module role="org.fcrepo.server.resourceIndex.ResourceIndex" class="org.fcrepo.server.resourceIndex.ResourceIndexModule">
+      <comment>Supports the ResourceIndex.</comment>
+      <param name="level" value="1">
+
+To this:
+
+    <module role="org.fcrepo.server.resourceIndex.ResourceIndex" class="org.fcrepo.server.resourceIndex.ResourceIndexModule">
+      <comment>Supports the ResourceIndex.</comment>
+      <param name="level" value="0">
+
 ### Interaction
 
 When jetty is finished initializing itself, Solr is available at 
