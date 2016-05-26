@@ -9,7 +9,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 * Jetty: 8.1.16
 * Solr: 4.10.4
-* Fedora: 4.4.0
+* Fedora: 4.5.1
 
 ## Usage
 
