@@ -1,5 +1,5 @@
 # hydra-jetty
-## Notice: This project is no longer maintained. The Hydra/Blacklight communities have switched to solr_wrapper and fcrepo_wrapper to address these needs.
+## Notice: This project is no longer maintained. The Hydra/Blacklight communities have switched to [solr_wrapper](https://rubygems.org/gems/solr_wrapper) and [fcrepo_wrapper](https://rubygems.org/gems/fcrepo_wrapper) to address these needs.
 
 This is a copy of jetty with the needed applications for running Hydra.  These include two java-based applications:
 
