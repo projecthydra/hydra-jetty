@@ -150,6 +150,27 @@
       <str name="spellcheckIndexDir">./spell</str>
       <str name="buildOnOptimize">true</str>
     </lst>
+    <lst name="spellchecker">
+      <str name="name">author</str>
+      <str name="field">author_spell</str>
+      <str name="spellcheckIndexDir">./spell_author</str>
+      <str name="accuracy">0.7</str>
+      <str name="buildOnOptimize">true</str>
+    </lst>
+    <lst name="spellchecker">
+      <str name="name">subject</str>
+      <str name="field">subject_spell</str>
+      <str name="spellcheckIndexDir">./spell_subject</str>
+      <str name="accuracy">0.7</str>
+      <str name="buildOnOptimize">true</str>
+    </lst>
+    <lst name="spellchecker">
+      <str name="name">title</str>
+      <str name="field">title_spell</str>
+      <str name="spellcheckIndexDir">./spell_title</str>
+      <str name="accuracy">0.7</str>
+      <str name="buildOnOptimize">true</str>
+    </lst>
   </searchComponent>
   
   <requestHandler name="/replication" class="solr.ReplicationHandler" startup="lazy" /> 
